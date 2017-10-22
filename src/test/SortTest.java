@@ -67,4 +67,22 @@ class SortTest {
         Sort.MergeSort(data);
         assertArrayEquals(expected, data);
     }
+
+    @Test
+    @DisplayName("Test merge sort on a randomly generated array")
+    void SortRandomlyGeneratedData() {
+        java.util.Random random = new java.util.Random();
+        int arrayLength = 10000;
+        int[] data = new int[arrayLength];
+        int[] expected = new int[arrayLength];
+
+        for (int i = 0; i < data.length; i++) {
+            data[i] = random.nextInt();
+        }
+
+        System.arraycopy(data, 0, expected, 0, data.length);
+        java.util.Arrays.sort(expected);
+        Sort.MergeSort(data);
+        assertArrayEquals(expected, data);
+    }
 }
