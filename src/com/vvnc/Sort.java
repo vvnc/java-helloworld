@@ -1,7 +1,7 @@
 package com.vvnc;
 
-class Sort {
-    static void MergeSort(int[] data) {
+public class Sort {
+    public static void MergeSort(int[] data) {
         // TODO: pass data as Iterable or Enumerable
         // TODO: pass comparison function as an argument
         // TODO: descending and ascending
