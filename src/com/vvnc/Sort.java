@@ -5,6 +5,9 @@ public class Sort {
         // TODO: pass data as Iterable or Enumerable
         // TODO: pass comparison function as an argument
         // TODO: descending and ascending
+        if (data == null){
+            return;
+        }
         if (data.length > 2) {
             int length1 = data.length / 2;
             int length2 = data.length - length1;
